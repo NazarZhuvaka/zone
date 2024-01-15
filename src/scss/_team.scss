@@ -1,0 +1,107 @@
+.team {
+    margin-bottom: 120px;
+    &__blure1{
+      position: absolute;
+      top: -147%;
+      left: 19%;
+          animation: animate 5s ease-in-out infinite;
+  
+          @keyframes animate {
+              0%,100% 
+              {
+                  transform: translateY(-20px);
+              }
+              50%
+              {
+                  transform: translateY(40px);
+              }
+          }
+      }
+      &__blure2{
+        position: absolute;
+        top: -136%;
+    right: 29%;
+            animation: animate 5s ease-in-out infinite;
+    
+            @keyframes animate {
+                0%,100% 
+                {
+                    transform: translateY(-20px);
+                }
+                50%
+                {
+                    transform: translateY(40px);
+                }
+            }
+        }
+  &-title {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 115px;
+    margin-bottom: 30px;
+  }
+  &-text {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 480px;
+    margin-inline: auto;
+    margin-bottom: 40px;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+
+    position: relative;
+
+    
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      }
+  }
+  &__card {
+    border-radius: 34px;
+    border: 1px solid var(--Bg-2, rgba(255, 255, 255, 0.08));
+    background: linear-gradient(
+      268deg,
+      rgba(254, 254, 255, 0.03) -11.04%,
+      rgba(255, 255, 255, 0.02) 104.89%
+    );
+
+    box-shadow: 0px 22px 18px 0px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    
+    &-title {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 7px;
+    }
+    &-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.48px;
+      text-transform: uppercase;
+      display: flex;
+    justify-content: center;
+    }
+    &-links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 11px;
+    }
+  }
+}

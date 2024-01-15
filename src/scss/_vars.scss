@@ -1,0 +1,25 @@
+:root {
+    --ff:'DM Sans', sans-serif;
+
+    --Gardient:linear-gradient(90deg, #2563EB 0.36%, #D946EF 201.02%);
+    --Gd:linear-gradient(90deg, #2563EB 0.11%, #D946EF 58.65%);
+
+    --white:white;
+    --white-sec:#E5E7EB;
+}
+
+.btn{
+    border-radius: 5px;
+    background: var(--Gardient);
+    border: none;
+    color: var(--white);
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+
+    // &:hover{
+    //     background: #66c0f4;
+    //     transition: 0.3s;
+    // }
+}

@@ -1,0 +1,55 @@
+.project{
+    display: flex;
+    align-items: center;
+    gap: 107px;
+    margin-top: 187px;
+    padding: 0 20px;
+
+    position: relative;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    
+        }
+    
+
+    &__blure1{
+        position: absolute;
+        top: -88%;
+        left: -10%;
+            animation: animate 5s ease-in-out infinite;
+    
+            @keyframes animate {
+                0%,100% 
+                {
+                    transform: translateY(-20px);
+                }
+                50%
+                {
+                    transform: translateY(40px);
+                }
+            }
+        }
+
+    &__info-title{
+        color:var(--white);
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    &__info-text{
+        color:var(--white);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 30px;
+        max-width: 579px;;
+    }
+
+    &__btn{
+        padding: 7px 14px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
